@@ -7,7 +7,7 @@ public class Practica1 extends JFrame {
         label1=new JLabel("Alexis Ivan \n Juan Ramon \n Eligardo \n Donadony");
         label1.setBounds(20,30,600,40);
         add(label1);
-        textField = new JTextField(20);
+        textField = new JTextField(20);//se crea un textfield con tamaño de 20
         textField.setText("Hola Mundo :)");
         textField.setBounds(40,60,600,80);
         add(textField);
