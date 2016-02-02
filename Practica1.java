@@ -1,13 +1,18 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.*;
 public class Practica1 extends JFrame implements ActionListener,ItemListener{
 
     private JButton boton1; 
     private JLabel label1;
     private JTextField textField;
     private JComboBox combo;
+    private JPanel JPanel1;
+
     public Practica1() {
-        setLayout(null);
+       
+       this.getContentPane().setBackground(Color.blue);
+         setLayout(null);
 	//Agregando combobox
 	combo=new JComboBox();
 	combo.setBounds(10,10,80,20);
@@ -30,6 +35,11 @@ public class Practica1 extends JFrame implements ActionListener,ItemListener{
         boton1.setBounds(100,250,100,30);
         add(boton1);
         boton1.addActionListener(this);
+        
+        JPanel1=new JPanel();
+        JPanel1.setBackground(Color.RED);
+        JPanel1.setSize(1000,1000);
+        add(JPanel1);
     }
  public void itemStateChanged(ItemEvent e) {
         if (e.getSource()==combo) {
