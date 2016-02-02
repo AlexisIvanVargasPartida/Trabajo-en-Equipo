@@ -9,7 +9,7 @@ public class Practica1 extends JFrame{
     }
     
     public static void main(String[] ar) {
-        Practica1 formulario1=new Practica1();
+        Practica1 formulario1=new Practica1();// se crea el objeto de la clase
         formulario1.setBounds(20,20,300,400);
         formulario1.setVisible(true);
     }
