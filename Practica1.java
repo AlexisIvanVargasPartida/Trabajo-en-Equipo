@@ -6,6 +6,7 @@ public class Practica1 extends JFrame{
         label1=new JLabel("Alexis Ivan\nJuan Ramon\nEligardo\nDonadony");
         label1.setBounds(20,30,300,40);
         add(label1);
+	JOptionPane.showMessageDialog(null,"Este es un mensaje externo");
     }
     ////////////////////////////////////////////
     public static void main(String[] ar) {
